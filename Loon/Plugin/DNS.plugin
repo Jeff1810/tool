@@ -1,11 +1,9 @@
 #!name=DNS
 #!name=🍟 Fries: 🌐 DNS enhanced
-#!desc=复刻于VirgilClyne。
-1.域名按所属DNS进行分流解析 2.路由器地址使用系统DNS进行解析 3.特殊地址使用规范DNS进行解析
-#!author=VirgilClyne
 #!homepage=https://github.com/VirgilClyne/GetSomeFries/wiki/🌐-DNS
 #!icon=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Server.png
 #!category=🍟 Fries
+#!date = 复制于：VirgilClyne，原链接：https://raw.githubusercontent.com/Jeff1810/tool/main/Loon/Plugin/DNS.plugin
 
 [General]
 
