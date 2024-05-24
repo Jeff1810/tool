@@ -3,7 +3,7 @@
 #!desc=域名按所属DNS进行分流解析
 #!homepage=https://github.com/VirgilClyne/GetSomeFries/wiki/🌐-DNS
 #!icon=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Server.png
-#!category=🍟 Fries 复制于：VirgilClyne，原链接：https://raw.githubusercontent.com/Jeff1810/tool/main/Loon/Plugin/DNS.plugin
+#!category= 复制：VirgilClyne，原链接：https://raw.githubusercontent.com/VirgilClyne/GetSomeFries/main/plugin/DNS.plugin
 
 [General]
 
@@ -132,6 +132,10 @@ networking.apple = server:https://doh.dns.apple.com/dns-query
 # *.apple.com = server:https://doh.dns.apple.com/dns-query
 # iCloud.com
 *.icloud.com = server:https://doh.dns.apple.com/dns-query
+
+# > Bing
+*.bing.com = server:https://dns.google/dns-query
+*.microsoft.com = server:https://dns.google/dns-query
 
 # > Alphabet
 # refer: https://developers.google.com/speed/public-dns/docs/doh?hl=zh-cn
