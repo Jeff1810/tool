@@ -1,8 +1,6 @@
-#!name=DNS
-#!name=🍟 Fries: 🌐 DNS enhanced
+
+#!name=DNS enhanced
 #!desc=域名按所属DNS进行分流解析
-#!homepage=https://github.com/VirgilClyne/GetSomeFries/wiki/🌐-DNS
-#!icon=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Server.png
 #!category= 复制：VirgilClyne，原链接：https://raw.githubusercontent.com/VirgilClyne/GetSomeFries/main/plugin/DNS.plugin
 
 [General]
