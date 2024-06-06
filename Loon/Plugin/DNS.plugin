@@ -347,26 +347,3 @@ upos-sz-upcdnbd??.bilivideo.com = server:180.76.76.76
 # BiliBili upos视频服务器（腾讯云）
 upos-sz-upcdntx.bilivideo.com = server:https://doh.pub/dns-query
 
-# > 🇨🇳 CHN
-# CNNIC SDNS
-# 中国政府网
-# *.gov.cn = server:1.2.4.8
-# *.政务 = server:1.2.4.8
-
-# > 🇹🇼 TWN
-# 中华电信
-*.cht.com.tw = server:https://dns.hinet.net/dns-query
-# 中华电信HiNet
-*.hinet.net = server:https://dns.hinet.net/dns-query
-# 中华电信emome
-*.emome.net = server:https://dns.hinet.net/dns-query
-# So-net Entertainment Taiwan
-# so-net.net.tw = server:ns1.so-net.net.tw
-# so-net.tw = server:ns1.so-net.net.tw
-# Taiwan Network Information Center
-*.tw = server:https://dns.twnic.tw/dns-query
-*.taipei = server:https://dns.twnic.tw/dns-query
-
-# > 🇺🇸 USA
-# Hurricane Electric
-*.he.net = server:https://ordns.he.net/dns-query
