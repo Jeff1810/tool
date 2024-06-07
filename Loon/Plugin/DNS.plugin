@@ -6,6 +6,29 @@
 [General]
 
 [Host]
+# --- CUSTOM HOSTS ---
+# > IPv6
+ip6-localhost = ::1
+ip6-loopback = ::1
+ip6-localnet = fe00::0
+ip6-mcastprefix = ff00::0
+ip6-allnodes = ff02::1
+ip6-allrouters = ff02::2
+ip6-allhosts = ff02::3
+
+# > Encrypted DNS
+dns.google = 8.8.8.8
+dns64.dns.google = 2001:4860:4860::6464
+cloudflare-dns.com = 104.16.249.249
+1dot1dot1dot1.cloudflare-dns.com = 1.1.1.1
+one.one.one.one = 1.1.1.1
+dns.alidns.com = 223.5.5.5
+doh.pub = 1.12.12.12
+dot.pub = 1.12.12.12
+doh.360.cn = 23.6.48.18
+dot.360.cn = 101.198.198.198
+dns.twnic.tw = 101.101.101.101
+ordns.he.net = 74.82.42.42
 
 # > Modify Contents
 # Google API Services China
@@ -41,9 +64,133 @@ fonts.gstatic.com = server:119.29.29.29
 stun.l.google.com = server:system
 stun?.l.google.com = server:system
 
-# > Bing
+# > Router Admin Panel
+# Ubiquiti Unifi Network App
+*.id.ui.direct = server:system
+# Ubiquiti Unifi Portal
+# unifi.ui.com = server:system
+# Ubiquiti Unifi OS
+unifi.local = server:system
+# Ubiquiti Unifi Controller
+# network.unifi.ui.com = server:system
+# Ubiquiti Amplifi Router
+amplifi.lan = server:system
+# Synology Router
+router.synology.com = server:system
+# Razer Sila Router
+sila.razer.com = server:system
+# Asus Router
+router.asus.com = server:system
+# Netgear Router
+routerlogin.net = server:system
+# Netgear Obri Router
+orbilogin.com = server:system
+# Linksys Router
+www.LinksysSmartWiFi.com = server:system
+LinksysSmartWiFi.com = server:system
+myrouter.local = server:system
+# Aurba Router
+instant.arubanetworks.com = server:system
+setmeup.arubanetworks.com = server:system
+# 小米 Mi WiFi Router
+www.miwifi.com = server:system
+miwifi.com = server:system
+# 华为 Huawei Router
+mediarouter.home = server:system
+# TP-Link Router
+tplogin.cn = server:system
+tplinklogin.net = server:system
+tplinkwifi.net = server:system
+# 水星 MERCURY Router
+melogin.cn = server:system
+# 迅捷 FAST Router
+falogin.cn = server:system
+# 腾达 Tenda Router
+tendawifi.com = server:system
+# 磊科 Netcore Router
+leike.cc = server:system
+# 中兴 ZTE Router
+zte.home = server:system
+# 斐讯 PHICOMM Router
+p.to = server:system
+phicomm.me = server:system
+# 极路由 HiWiFi Router
+hiwifi.com = server:system
+# 迅雷路由
+peiluyou.com = server:system
+# M2M routers at MiFi Hotspot
+_hotspot_.m2m = server:system
+# csl Wi-Fi
+hotspot.cslwifi.com = server:system
+
+# > Alphabet
+# refer: https://developers.google.com/speed/public-dns/docs/doh?hl=zh-cn
+# *.google = server:https://dns.google/dns-query
+# *.google.com = server:https://dns.google/dns-query
+# *.google.com.?? = server:https://dns.google/dns-query
+# Google sites
+# *.goog = server:https://dns.google/dns-query
+# Google 静态资源
+# *.gstatic.com = server:https://dns.google/dns-query
+# Google Photos
+# *.ggpht.com = server:https://dns.google/dns-query
+# Google 用户上传数据
+# *.googleusercontent.com = server:https://dns.google/dns-query
+# Google APIs
+# *.googleapis.com = server:https://dns.google/dns-query
+# Google backbone
+# *.1e100.net = server:https://dns.google/dns-query
+# Youtube sites
+# *.youtube = server:https://dns.google/dns-query
+# Youtube
+# *.youtube.com = server:https://dns.google/dns-query
+# Youtube 图片
+# *.ytimg.com = server:https://dns.google/dns-query
+# Youtube Video
+# *.googlevideo.com = server:https://dns.google/dns-query
+# Google Video Thumbnails
+# *.gvt?.com = server:https://dns.google/dns-query
+# reCaptcha
+# *.recaptcha.net = server:https://dns.google/dns-query
+# Gmail
+# *.gmail.com = server:https://dns.google/dns-query
+# Google Source
+# *.googlesource.com = server:https://dns.google/dns-query
+# Google AD Services
+# *.googleadservices.com = server:https://dns.google/dns-query
+# DoubleClick
+# *.doubleclick.net = server:https://dns.google/dns-query
+# AdSense
+# *.adsense.com = server:https://dns.google/dns-query
+# AdSense Custom Search Ads
+# *.adsensecustomsearchads.com = server:https://dns.google/dns-query
+# AdSense for mobile apps
+# *.adsenseformobileapps.com = server:https://dns.google/dns-query
+# Google shortened URLs
+# *.gle = server:https://dns.google/dns-query
+# Google URL Shortener
+# goo.gl = server:https://dns.google/dns-query
+
+# > Cloudflare
+# refer: https://developers.cloudflare.com/1.1.1.1/encryption/dns-over-https/make-api-requests/
+# *.cloudflare.com = server:https://cloudflare-dns.com/dns-query
+# Cloudflare Stream
+# *.cloudflarestream.com = server:https://cloudflare-dns.com/dns-query
+# Cloudflare Client
+# *.cloudflareclient.com = server:https://cloudflare-dns.com/dns-query
+# Cloudflare Web Analytics
+# *.cloudflareinsights.com = server:https://cloudflare-dns.com/dns-query
+# Cloudflare 1.1.1.1
+# *.every1dns.net = server:https://cloudflare-dns.com/dns-query
+# Cloudflare SSL Certificate
+# *.cloudflaressl.com = server:https://cloudflare-dns.com/dns-query
+# Cloudflare DNS
+# *.cloudflare-dns.com = server:https://cloudflare-dns.com/dns-query
+# CloudFlare Workers
+# *.workers.dev = server:https://cloudflare-dns.com/dns-query
+
 *.bing.com = server:https://dns.google/dns-query
-*.microsoft.com = server:https://dns.google/dns-query
+*.copilot.microsoft.com = server:https://dns.google/dns-query
 
 # > 阿里巴巴
 # refer: https://www.alidns.com
@@ -336,4 +483,3 @@ upos-sz-mirrorcos??.bilivideo.com = server:https://doh.pub/dns-query
 upos-sz-upcdnbd??.bilivideo.com = server:180.76.76.76
 # BiliBili upos视频服务器（腾讯云）
 upos-sz-upcdntx.bilivideo.com = server:https://doh.pub/dns-query
-
