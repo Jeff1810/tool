@@ -1,0 +1,4 @@
+deb http://mirrors.aliyun.com/ubuntu/ lunar main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ lunar-updates main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ lunar-backports main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ lunar-security main restricted universe multiverse
