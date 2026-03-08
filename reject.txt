@@ -1,0 +1,3 @@
+DOMAIN-KEYWORD,immersive-translate,REJECT
+DOMAIN-KEYWORD,immersivetranslate,REJECT
+DOMAIN-SUFFIX,owenyoung.com,REJECT
