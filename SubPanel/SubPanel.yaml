@@ -6,4 +6,4 @@
 订阅面板 = script-name=订阅面板, update-interval=3600
 
 [Script]
-订阅面板 = type=generic, timeout=20, script-path=https://raw.githubusercontent.com/Jeff1810/tool/refs/heads/main/SubPanel/SubPanel.js, argument=title1={{{A名称}}}&url1={{{A地址}}}&resetDay1={{{A重置}}}&title2={{{B名称}}}&url2={{{B地址}}}&resetDay2={{{B重置}}}&title3={{{C名称}}}&url3={{{C地址}}}&resetDay3={{{C重置}}}&title4={{{D名称}}}&url4={{{D地址}}}&resetDay4={{{D重置}}}&title5={{{E名称}}}&url5={{{E地址}}}&resetDay5={{{E重置}}}
+订阅面板 = type=generic, timeout=20, script-path=https://raw.githubusercontent.com/Jeff1810/tool/refs/heads/master/Subinfo.js, argument=title1={{{A名称}}}&url1={{{A地址}}}&resetDay1={{{A重置}}}&title2={{{B名称}}}&url2={{{B地址}}}&resetDay2={{{B重置}}}&title3={{{C名称}}}&url3={{{C地址}}}&resetDay3={{{C重置}}}&title4={{{D名称}}}&url4={{{D地址}}}&resetDay4={{{D重置}}}&title5={{{E名称}}}&url5={{{E地址}}}&resetDay5={{{E重置}}}
