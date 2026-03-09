@@ -1,6 +1,3 @@
-// 2025.11.28 15:19
-// 致敬:https://github.com/z-jinke/Panel/
-// 引用:https://raw.githubusercontent.com/IBL3ND/MK/refs/heads/main/subscription-info.js
 
 const args = {};
 $argument.split("&").forEach(p => {
