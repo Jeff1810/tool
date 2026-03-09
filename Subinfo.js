@@ -100,6 +100,6 @@ function isValidUrl(url) {
     title: "SubPanel",
     content: panels.join("\n\n"),
     icon: "text.and.command.macwindow",
-    "icon-color": "#59B4FF"
+    "color": "#59B4FF"
   });
 })();
