@@ -35,7 +35,7 @@ $httpClient.get(url, (err, resp, data) => {
     titleColor = "#FFCC00"
   } else {
     riskText = `🟢低风险 ( ${risk} )`
-    titleColor = "#FFFFFF"
+    titleColor = "#34C759"
   }
 
   $done({
@@ -47,7 +47,7 @@ ASN：AS${j.asn} ${j.asOrganization}
 原生 IP：${nativeText}
 ${riskText}`,
     icon: risk >= 70 ? "exclamationmark.triangle.fill" : "leaf.fill",
-    'title-color': titleColor
+    'title-color': "#34C759"
   })
 })
 
