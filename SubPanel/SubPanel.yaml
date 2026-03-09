@@ -1,37 +1,9 @@
-name: 订阅面板
-description: 查看机场流量使用和到期时间
-compat_arguments:
-  A名称: 订阅A名称
-  A地址: 订阅A地址
-  A重置: 重置日
-  B名称: 订阅B名称
-  B地址: 订阅B地址
-  B重置: 重置日
-  C名称: 订阅C名称
-  C地址: 订阅C地址
-  C重置: 重置日
-  D名称: 订阅D名称
-  D地址: 订阅D地址
-  D重置: 重置日
-  E名称: 订阅E名称
-  E地址: 订阅E地址
-  E重置: 重置日
-compat_arguments_desc: |-
-  1.致敬:https://github.com/z-jinke/
-  2.引用:https://github.com/IBL3ND/
-  3.不需要编码订阅地址可直接使用
-  4.支持百分比进度
-  5.支持5个订阅显示
-  6.支持填写重置日期
-dns: {}
-scriptings:
-- generic:
-    name: 订阅面板
-    script_url: https://raw.githubusercontent.com/Jeff1810/tool/refs/heads/main/SubPanel/SubPanel.js
-    arguments:
-      _compat.$argument: title1=b&url1=https%3A%2F%2Fpopcornlab.de%2Fapi%2Fv1%2Fmiaomiao%3FOuO%3D9402adb9430f0c6b09bd7bf2a5b3e9fb&resetDay1=重置日&title2=订阅B名称&url2=订阅B地址&resetDay2=重置日&title3=订阅C名称&url3=订阅C地址&resetDay3=重置日&title4=订阅D名称&url4=订阅D地址&resetDay4=重置日&title5=订阅E名称&url5=订阅E地址&resetDay5=重置日
-    timeout: 20
-panels:
-- name: 订阅面板
-  script_name: 订阅面板
-  update_interval: 3600
+#!name=订阅面板
+#!desc=查看机场的流量使用和到期时间
+#!arguments=A名称:订阅A名称,A地址:订阅A地址,A重置:重置日,B名称:订阅B名称,B地址:订阅B地址,B重置:重置日,C名称:订阅C名称,C地址:订阅C地址,C重置:重置日,D名称:订阅D名称,D地址:订阅D地址,D重置:重置日,E名称:订阅E名称,E地址:订阅E地址,E重置:重置日
+#!arguments-desc= 1.致敬:https://github.com/z-jinke\n 2.引用:https://github.com/IBL3ND\n 3.不需要编码订阅地址可直接使用\n 4.支持百分比进度\n5.支持5个订阅显示\ 6.支持填写重置日期
+[Panel]
+订阅面板 = script-name=订阅面板, update-interval=3600
+
+[Script]
+订阅面板 = type=generic, timeout=20, script-path=https://raw.githubusercontent.com/IBL3ND/MK/refs/heads/main/subscription-info.js, argument=title1={{{A名称}}}&url1={{{A地址}}}&resetDay1={{{A重置}}}&title2={{{B名称}}}&url2={{{B地址}}}&resetDay2={{{B重置}}}&title3={{{C名称}}}&url3={{{C地址}}}&resetDay3={{{C重置}}}&title4={{{D名称}}}&url4={{{D地址}}}&resetDay4={{{D重置}}}&title5={{{E名称}}}&url5={{{E地址}}}&resetDay5={{{E重置}}}
