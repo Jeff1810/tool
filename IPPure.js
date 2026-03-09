@@ -35,7 +35,7 @@ $httpClient.get(url, (err, resp, data) => {
     titleColor = "#FFCC00"
   } else {
     riskText = `🟢低风险 ( ${risk} )`
-    titleColor = "#34C759"
+    titleColor = "#FFFFFF"
   }
 
   $done({
