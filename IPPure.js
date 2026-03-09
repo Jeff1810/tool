@@ -18,23 +18,23 @@ $httpClient.get(url, (err, resp, data) => {
   const showIP = MarkIP ? maskIP(ip) : ip
 
   const flag = flagEmoji(j.countryCode)
-  const nativeText = j.isResidential ? "🟢Yes|原生" : "🔶否|机房/商业"
+  const nativeText = j.isResidential ? "🟢Yes [原生]" : "🔶否 [机房/商业]"
   const risk = j.fraudScore
 
   let riskText
   let titleColor
 
   if (risk >= 80) {
-    riskText = `风险值: 🔴极高风险 ( ${risk} )`
+    riskText = `🔴极高风险 ( ${risk} )`
     titleColor = "#FF3B30"
   } else if (risk >= 70) {
-    riskText = `风险值: 🟠高风险 ( ${risk} )`
+    riskText = `🟠高风险 ( ${risk} )`
     titleColor = "#FF9500"
   } else if (risk >= 40) {
-    riskText = `风险值: 🟡中等风险 ( ${risk} )`
+    riskText = `🟡中等风险 ( ${risk} )`
     titleColor = "#FFCC00"
   } else {
-    riskText = `风险值: 🟢低风险 ( ${risk} )`
+    riskText = `🟢低风险 ( ${risk} )`
     titleColor = "#34C759"
   }
 
