@@ -2,7 +2,6 @@
 // 致敬:https://github.com/z-jinke/Panel/
 // 引用:https://raw.githubusercontent.com/IBL3ND/MK/refs/heads/main/subscription-info.js
 
-// 处理外部参数
 const args = {};
 $argument.split("&").forEach(p => {
   const index = p.indexOf("=");
@@ -10,7 +9,7 @@ $argument.split("&").forEach(p => {
   const value = p.substring(index + 1);
   args[key] = decodeURIComponent(value);
 });
-// 计算重置日剩余天数
+
 function getResetInfo(resetDay) {
   if (!resetDay) return ""; 
   const today = new Date();
@@ -28,7 +27,7 @@ function getResetInfo(resetDay) {
   const diff = Math.ceil((resetDate - today) / (1000 * 60 * 60 * 24));
   return `重置：${diff}天`;
 }
-// 获取订阅流量信息
+
 function fetchInfo(url, resetDay) {
   return new Promise(resolve => {
     $httpClient.get({ url, headers: { "User-Agent": "Quantumult%20X/1.5.2" } }, (err, resp) => {
