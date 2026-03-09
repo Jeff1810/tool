@@ -96,11 +96,10 @@ function isValidUrl(url) {
     panels.push(args[titleKey] ? `机场：${args[titleKey]}\n${content}` : content);
   }
 
-    $done({
-    [span_0](start_span)title: "SubPanel",[span_0](end_span)
-    [span_1](start_span)content: panels.join("\n\n"),[span_1](end_span)
-    [span_2](start_span)icon: "text.and.command.macwindow",[span_2](end_span)
-    color: "#59B4FF"
+  $done({
+    title: "SubPanel",
+    content: panels.join("\n\n"),
+    icon: "antenna.radiowaves.left.and.right.circle.fill",
+    "icon-color": "#00E28F"
   });
-
 })();
