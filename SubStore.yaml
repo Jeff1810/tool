@@ -1,0 +1,21 @@
+name: Sub-Store
+
+dns: {}
+scriptings:
+- http_request:
+    name: Sub-Store Core
+    match: ^https?:\/\/sub\.store\/((download)|api\/(preview|sync|(utils\/node-info)))
+    script_url: https://github.com/sub-store-org/Sub-Store/releases/latest/download/sub-store-1.min.js
+    timeout: 120
+    body_required: true
+- http_request:
+    name: Sub-Store Simple
+    match: ^https?:\/\/sub\.store
+    script_url: https://github.com/sub-store-org/Sub-Store/releases/latest/download/sub-store-0.min.js
+    timeout: 120
+    body_required: true
+    
+mitm:
+  hostnames:
+    includes:
+    - sub.store
