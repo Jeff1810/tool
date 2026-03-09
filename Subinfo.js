@@ -99,7 +99,7 @@ function isValidUrl(url) {
   $done({
     title: "SubPanel",
     content: panels.join("\n\n"),
-    icon: "antenna.radiowaves.left.and.right.circle.fill",
-    "icon-color": "#00E28F"
+    icon: "text.and.command.macwindow",
+    "icon-color": "#59B4FF"
   });
 })();
