@@ -1,4 +1,3 @@
-
 const args = {};
 $argument.split("&").forEach(p => {
   const index = p.indexOf("=");
