@@ -18,23 +18,24 @@ $httpClient.get(url, (err, resp, data) => {
   const showIP = MarkIP ? maskIP(ip) : ip
 
   const flag = flagEmoji(j.countryCode)
-  const nativeText = j.isResidential ? "🟢Yes [原生]" : "🔶否 [机房/商业]"
+  const nativeText = j.isResidential ? " [家宽]" : " [机房/商业]"
+  const nativeTextt = j.isBroadcast ? " [原生]" : " [广播]"
   const risk = j.fraudScore
 
   let riskText
   let titleColor
 
   if (risk >= 80) {
-    riskText = `🔴极高风险 ( ${risk} )`
+    riskText = `系数: 🔴极高风险 ( ${risk} )`
     titleColor = "#FF3B30"
   } else if (risk >= 70) {
-    riskText = `🟠高风险 ( ${risk} )`
+    riskText = `系数: 🟠高风险 ( ${risk} )`
     titleColor = "#FF9500"
   } else if (risk >= 40) {
-    riskText = `🟡中等风险 ( ${risk} )`
+    riskText = `系数: 🟡中等风险 ( ${risk} )`
     titleColor = "#FFCC00"
   } else {
-    riskText = `🟢低风险 ( ${risk} )`
+    riskText = `系数: 🟢低风险 ( ${risk} )`
     titleColor = "#34C759"
   }
 
@@ -43,9 +44,9 @@ $httpClient.get(url, (err, resp, data) => {
     content:
 `${ipLabel}：${showIP}
 ASN：AS${j.asn} ${j.asOrganization}
-位置：${flag} ${j.country} ${j.city}
-原生 IP：${nativeText}
-${riskText}`,
+位置：${flag} ${j.countryCode} ${j.city}
+属性：${nativeTextt} ${riskText} ${nativeText} ${riskText}`,
+    
     icon: risk >= 70 ? "exclamationmark.triangle.fill" : "leaf.fill",
     'title-color': "#34C759"
   })
