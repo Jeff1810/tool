@@ -1,7 +1,7 @@
 #!name=订阅面板
 #!desc=查看机场的流量使用和到期时间
 #!arguments=A名称:订阅A名称,A地址:订阅A地址,A重置:重置日,B名称:订阅B名称,B地址:订阅B地址,B重置:重置日,C名称:订阅C名称,C地址:订阅C地址,C重置:重置日,D名称:订阅D名称,D地址:订阅D地址,D重置:重置日,E名称:订阅E名称,E地址:订阅E地址,E重置:重置日
-#!arguments-desc= 1.致敬:https://github.com/z-jinke\n 2.引用:https://github.com/IBL3ND\n 3.不需要编码订阅地址可直接使用\n 4.支持百分比进度\n5.支持5个订阅显示\ 6.支持填写重置日期
+#!arguments-desc= 1.致敬:https://github.com/z-jinke\n2.引用:https://github.com/IBL3ND\n3.不需要编码订阅地址可直接使用\n 4.支持百分比进度\n5.支持5个订阅显示\6.支持填写重置日期
 [Panel]
 订阅面板 = script-name=订阅面板, update-interval=3600
 
