@@ -97,7 +97,7 @@ function isValidUrl(url) {
   }
 
   $done({
-    title: "订阅流量",
+    title: "SubPanel",
     content: panels.join("\n\n"),
     icon: "antenna.radiowaves.left.and.right.circle.fill",
     "icon-color": "#00E28F"
