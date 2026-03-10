@@ -7,7 +7,7 @@ const MarkIP = ($argument || 'false').toLowerCase() === 'true'
 
 $httpClient.get(url, (err, resp, data) => {
   if (err) {
-    $done({ title: "IP 纯净度", content: "请求失败", icon: "network.slash" })
+    $done({ title: "IPPure", content: "请求失败", icon: "network.slash" })
     return
   }
 
