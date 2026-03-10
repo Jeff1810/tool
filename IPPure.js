@@ -40,7 +40,7 @@ $httpClient.get(url, (err, resp, data) => {
   }
 
   $done({
-    title: "IPPure纯净度",
+    title: "IPPure",
     content:
 `${ipLabel}：${showIP}
 ASN：AS${j.asn} ${j.asOrganization}
