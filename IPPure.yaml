@@ -1,15 +1,26 @@
-#!name=IP-Pure
-#!desc=ip纯净度检测（IPPure）
-#!category=网络检测
-#!arguments=Proxy:Proxy,MarkIP:false
-#!arguments-desc=Proxy: 选择策略组,默认DIRECT. @from wish | MarkIP: IP 打码(true/false),默认 false
+name: IP-Pure
+description: ip纯净度检测（IPPure）
+compat_arguments:
+  Proxy: Global
+  MarkIP: 'false'
+compat_arguments_desc: 'Proxy: 选择策略组,默认DIRECT. @from wish | MarkIP: IP 打码(true/false),默认 false'
+dns: {}
+rules:
+- domain_suffix:
+    match: ippure.com
+    policy: Global
+scriptings:
+- generic:
+    name: IP-Pure
+    script_url: https://raw.githubusercontent.com/Jeff1810/tool/refs/heads/master/IPPure2.js
+    arguments:
+      _compat.$argument: title=IPPure&colorlow=leaf.fill&iconmid=leaf.fill&colorhigh=leaf.fill&colorextreme=leaf.fill&colorlow=#00D42E&colormid=#93DE09&colorhigh=#FF9500&colorextreme=#FF3B30
+    timeout: 10
+panels:
+- name: IP-Pure
+  title: IPPure
+  content: 刷新中…
+  style: info
+  script_name: IP-Pure
+  update_interval: -1
 
-[Rule]
-# 确保检测请求走选定的代理策略
-DOMAIN-SUFFIX,ippure.com,{{{Proxy}}}
-
-[Panel]
-IP-Pure = script-name=IP-Pure, title=IP 纯净度, content=刷新中…, style=info, update-interval=300
-
-[Script]
-IP-Pure = type=generic, timeout=10, argument={{{MarkIP}}}, script-path=https://raw.githubusercontent.com/Jeff1810/tool/refs/heads/master/IPPure.js
