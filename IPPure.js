@@ -25,13 +25,13 @@ $httpClient.get(url, (err, resp, data) => {
   let riskText
   let titleColor
 
-  if (risk >= 80) {
+  if (risk <= 80) {
     riskText = `极高风险 ( ${risk} )`
     titleColor = "#FF3B30"
-  } else if (risk >= 70) {
+  } else if (risk <= 70) {
     riskText = `高风险 ( ${risk} )`
     titleColor = "#FF9500"
-  } else if (risk >= 40) {
+  } else if (risk <= 40) {
     riskText = `中等风险 ( ${risk} )`
     titleColor = "#FFCC00"
   } else {
@@ -48,7 +48,7 @@ ASN：AS${j.asn} ${j.asOrganization}
 属性：${nativeText} ${bbbb}
 系数：${riskText}`,
     
-    icon: risk >= 70 ? "exclamationmark.triangle.fill" : "leaf.fill",
+    icon: risk <= 70 ? "exclamationmark.triangle.fill" : "leaf.fill",
     'title-color': titleColor
   })
 })
