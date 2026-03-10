@@ -1,0 +1,15 @@
+#!name=IP-Pure
+#!desc=ip纯净度检测（IPPure）
+#!category=网络检测
+#!arguments=Proxy:Global,MarkIP:false
+#!arguments-desc=Proxy: 选择策略组,默认DIRECT. @from wish | MarkIP: IP 打码(true/false),默认 false
+
+[Rule]
+# 确保检测请求走选定的代理策略
+DOMAIN-SUFFIX,ippure.com,{{{Proxy}}}
+
+[Panel]
+IP-Pure = script-name=IP-Pure, title=IP 纯净度, content=刷新中…, style=info, update-interval=300
+
+[Script]
+IP-Pure = type=generic, timeout=10, argument={{{MarkIP}}}, script-path=https://raw.githubusercontent.com/Jeff1810/tool/refs/heads/master/IPPure.js
