@@ -26,16 +26,16 @@ $httpClient.get(url, (err, resp, data) => {
   let titleColor
 
   if (risk >= 80) {
-    riskText = `🔴极高风险 ( ${risk} )`
+    riskText = `极高风险 ( ${risk} )`
     titleColor = "#FF3B30"
   } else if (risk >= 70) {
-    riskText = `🟠高风险 ( ${risk} )`
+    riskText = `高风险 ( ${risk} )`
     titleColor = "#FF9500"
   } else if (risk >= 40) {
-    riskText = `🟡中等风险 ( ${risk} )`
+    riskText = `中等风险 ( ${risk} )`
     titleColor = "#FFCC00"
   } else {
-    riskText = `🟢低风险 ( ${risk} )`
+    riskText = `低风险 ( ${risk} )`
     titleColor = "#34C759"
   }
 
@@ -49,7 +49,7 @@ ASN：AS${j.asn} ${j.asOrganization}
 系数：${riskText}`,
     
     icon: risk >= 70 ? "exclamationmark.triangle.fill" : "leaf.fill",
-    'title-color': "#34C759"
+    'title-color': titleColor
   })
 })
 
