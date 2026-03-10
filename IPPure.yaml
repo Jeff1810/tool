@@ -2,8 +2,8 @@
 #!desc=ippure
 
 [Panel]
-NetSpeed = script-name=NetSpeed,update-interval=-1
+IPPure = script-name=IPPure,update-interval=-1
 [Script]
-NetSpeed = type=generic,script-path=https://raw.githubusercontent.com/getsomecat/GetSomeCats/Surge/modules/Panel/Net_Speed/Net_Speed.js,argument=title=IPPure&colorlow=leaf.fill&iconmid=leaf.fill&colorhigh=leaf.fill&colorextreme=leaf.fill&colorlow=#00D42E&colormid=#93DE09&colorhigh=#FF9500&colorextreme=#FF3B30
+IPPure = type=generic,script-path=https://raw.githubusercontent.com/Jeff1810/tool/refs/heads/master/IPPure.js2,argument=title=IPPure&colorlow=leaf.fill&iconmid=leaf.fill&colorhigh=leaf.fill&colorextreme=leaf.fill&colorlow=#00D42E&colormid=#93DE09&colorhigh=#FF9500&colorextreme=#FF3B30
 
 
