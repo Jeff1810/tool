@@ -1,31 +1,42 @@
 
+  name: DNS 
+  description: DNS & Hosts 
+  dns: {}
   # Hosts (域名映射)
+  # 
   hosts:
     # > IPv6
     # IPv6 Localhost
-    ip6-localhost: ::1
+    ip6-localhost:
+      - ::1
     # IPv6 Loopback
-    ip6-loopback: ::1
+    ip6-loopback:
+      - ::1
     # IPv6 Link-Local
-    ip6-localnet: fe00::0
+    ip6-localnet:
+      - fe00::0
     # IPv6 Multicast
-    ip6-mcastprefix: ff00::0
+    ip6-mcastprefix:
+      - ff00::0
     # IPv6 All Nodes
-    ip6-allnodes: ff02::1
+    ip6-allnodes:
+      - ff02::1
     # IPv6 All Routers
-    ip6-allrouters: ff02::2
+    ip6-allrouters:
+      - ff02::2
     # IPv6 All Hosts
-    ip6-allhosts: ff02::3
+    ip6-allhosts:
+      - ff02::3
 
-    # > Encrypted DNS
+    # > Encrypted DNS (引导 DNS 地址)
     # https://dns.google/dns-query
     dns.google:
       - 8.8.8.8
       - 8.8.4.4
       - 2001:4860:4860::8888
       - 2001:4860:4860::8844
-
     # https://dns64.dns.google/dns-query
+
     dns64.dns.google:
       - 2001:4860:4860::6464
       - 2001:4860:4860::64
