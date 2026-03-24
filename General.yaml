@@ -3,14 +3,14 @@ description: 跳过部分应用的代理检测
 dns: {}
 bypass_tunnel_proxy:
 - localhost
-#?- *.local
+- '*.local'
 - captive.apple.com
 - token.safebrowsing.apple
 - passenger.t3go.cn
-- *.ccb.com
+- '*.ccb.com'
+- '*.abchina.com'
+- '*.abchina.com.cn'
 - wxh.wo.cn
-- *.abcchina.com
-- *.abcchina.com.cn
 - 10.0.0.0/8
 - 127.0.0.1/32
 - 172.16.0.0/12
