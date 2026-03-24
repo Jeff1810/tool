@@ -3,7 +3,7 @@ description: 跳过部分应用的代理检测
 dns: {}
 bypass_tunnel_proxy:
 - localhost
-- *.local
+#?- *.local
 - captive.apple.com
 - token.safebrowsing.apple
 - passenger.t3go.cn
