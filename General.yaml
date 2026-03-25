@@ -46,6 +46,7 @@ real_ip_domains:
 - '*-update.xoyocdn.com'
 - id6.me
 - open.e.189.cn
+- token.safebrowsing.apple
 
 rules:
 - domain:
