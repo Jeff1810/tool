@@ -1,18 +1,18 @@
 # 规则名称: Lan
 
 domain_suffix_set:
-  - local
-  - localhost
-  - ip6-localhost
-  - ip6-loopback
-  - lan
-  - home.arpa
-  - test
-  - example
-  - invalid
+- local
+- localhost
+- ip6-localhost
+- ip6-loopback
+- lan
+- home.arpa
+- test
+- example
+- invalid
 
 ip_cidr_set:
-  - 0.0.0.0/8
+- 0.0.0.0/8
 - 10.0.0.0/8
 - 100.64.0.0/10
 - 127.0.0.0/8
