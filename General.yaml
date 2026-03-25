@@ -5,7 +5,6 @@ bypass_tunnel_proxy:
 - localhost
 - '*.local'
 - captive.apple.com
-- token.safebrowsing.apple
 - passenger.t3go.cn
 - '*.ccb.com'
 - '*.abchina.com'
